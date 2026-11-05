@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe7e7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #40658c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section p {
+    text-align: justify;
+}
+
+.program-list {
+    list-style-type: none;
+}
+
+.program-list li {
+    width: 50%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: #f28c28;
+    color: white;
+    border-radius: 5px;
+}
+
+.images {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.images img {
+    width: 45%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #40658c;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #40658c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =====================================================
+   LAB 05
+   ===================================================== */
+
+/* ---------- Câu A: Bảng thông tin tuyển sinh ---------- */
+.tuyensinh {
+    position: relative;            /* Câu E: làm mốc cho nhãn absolute */
+    padding: 20px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+}
+
+.tuyensinh h2 {
+    margin-bottom: 15px;
+}
+
+.tuyensinh table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tuyensinh th,
+.tuyensinh td {
+    border: 1px solid #b8c2cc;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.tuyensinh thead {
+    background-color: #40658c;
+    color: white;
+}
+
+.tuyensinh tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tuyensinh tbody tr:nth-child(even) {
+    background-color: #f2f2f2;     /* Câu D: hàng chẵn nền xám nhạt */
+}
+
+.tuyensinh tbody tr:hover {
+    background-color: #fde9d0;
+}
+
+/* Căn giữa cột STT; học phí chữ đỏ */
+.tuyensinh th:nth-child(1),
+.tuyensinh td:nth-child(1) {
+    text-align: center;
+}
+
+.tuyensinh td:nth-child(4) {
+    color: red;
+}
+
+/* ---------- Câu C: Form đăng ký tư vấn ---------- */
+.dangky-tuvan h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dangky-tuvan form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.dangky-tuvan .form-group {
+    margin-bottom: 15px;
+}
+
+.dangky-tuvan .form-group > label:first-child {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.dangky-tuvan input[type="text"],
+.dangky-tuvan input[type="email"],
+.dangky-tuvan input[type="tel"],
+.dangky-tuvan select,
+.dangky-tuvan textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.dangky-tuvan input[type="radio"],
+.dangky-tuvan input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+    accent-color: blue;
+}
+
+/* Hiệu ứng khi nhập liệu (Câu C + D) */
+.dangky-tuvan input:focus,
+.dangky-tuvan select:focus,
+.dangky-tuvan textarea:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.dangky-tuvan input[required] {
+    border-left: 4px solid red;
+}
+
+/* Nút bấm */
+.dangky-tuvan .form-buttons {
+    text-align: center;
+}
+
+.dangky-tuvan button {
+    padding: 10px 22px;
+    background-color: #2563ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.dangky-tuvan button[type="reset"] {
+    background-color: #6b7280;
+}
+
+.dangky-tuvan button:hover {
+    background-color: #1e3a8a;
+}
+
+.dangky-tuvan button[type="reset"]:hover {
+    background-color: #374151;
+}
+
+/* ---------- Câu D: Selector nâng cao (danh sách ngành) ---------- */
+.program-list li:hover {
+    color: red;
+}
+
+.program-list li:first-child {
+    font-weight: bold;
+}
+
+/* ---------- Câu E: CSS Position ---------- */
+.nhan-tuyensinh {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 6px 14px;
+    font-weight: bold;
+    border-radius: 0 8px 0 8px;
+}
+
+.lienhe {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2563ed;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.lienhe:hover {
+    background-color: #1e3a8a;
+}
+
+/* ---------- Câu F: z-index ---------- */
+.notification-group {
+    position: relative;
+    height: 70px;
+}
+
+.badge {
+    position: absolute;
+    padding: 10px 15px;
+    color: white;
+}
+
+.badge-blue {
+    top: 10px;
+    left: 10px;
+    background-color: blue;
+    z-index: 1;
+}
+
+.badge-red {
+    top: 25px;
+    left: 110px;
+    background-color: red;
+    z-index: 2;                    /* lớn hơn => HOT nằm phía trước */
+}
+
+/* =====================================================
+   LAB 07 - Flexbox / Shadow / Transition / Animation
+   ===================================================== */
+
+/* Ảnh cơ sở vật chất: Flexbox thay cho inline-block */
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.images img{
+    flex: 1;
+    margin: 0;
+    display: block;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.images img:hover{
+    transform: scale(1.05);
+}
+
+/* Text shadow cho header */
+header h2{
+    text-shadow: 2px 2px 4px #1e3a5f;
+}
+
+/* Danh sách ngành: transition khi hover */
+.program-list li{
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+.program-list li:hover{
+    transform: translateX(10px);
+}
+
+/* Animation: nhãn HOT nhấp nháy */
+@keyframes blink{
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+}
+.badge-red{
+    animation: blink 1s ease-in-out infinite;
+}

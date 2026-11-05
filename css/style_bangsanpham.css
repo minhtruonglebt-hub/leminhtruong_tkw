@@ -1,0 +1,68 @@
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a5f;
+}
+
+.bang-sanpham {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.bang-sanpham th,
+.bang-sanpham td {
+    border: 1px solid #c5cdd8;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.bang-sanpham thead {
+    background-color: #1e4f8a;
+    color: white;
+}
+
+.bang-sanpham tbody tr:nth-child(even) {
+    background-color: #eef1f5;
+}
+
+.bang-sanpham tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+/* Căn giữa STT, Số lượng */
+.bang-sanpham th:nth-child(1),
+.bang-sanpham td:nth-child(1),
+.bang-sanpham th:nth-child(4),
+.bang-sanpham td:nth-child(4) {
+    text-align: center;
+}
+
+/* Căn phải Đơn giá, Thành tiền */
+.bang-sanpham th:nth-child(3),
+.bang-sanpham td:nth-child(3),
+.bang-sanpham th:nth-child(5),
+.bang-sanpham td:nth-child(5) {
+    text-align: right;
+}
+
+/* Dòng tổng cộng */
+.bang-sanpham tfoot {
+    background-color: #fff3cd;
+    font-weight: bold;
+}
+
+.bang-sanpham tfoot td:nth-child(n) {
+    text-align: right;
+}
+
+.bang-sanpham tfoot td:last-child:nth-child(n) {
+    color: red;
+}
